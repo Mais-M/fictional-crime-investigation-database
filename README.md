@@ -24,8 +24,10 @@ I used the SQL Murder Mystery ERD as a structural reference and independently cr
 - `crime_scene_report`
 - `solution`
 
-## Example JOIN Query
+## ERD
+![Fictional Crime Investigation Database ERD](fictional-crime-investigation-erd.png)
 
+## Example JOIN Query
 ```sql
 SELECT
     p.name,
@@ -37,3 +39,4 @@ SELECT
 FROM person AS p
 JOIN drivers_license AS d
     ON p.license_id = d.id;
+```
